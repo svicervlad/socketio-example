@@ -1,4 +1,4 @@
-# Example to usage react and flask over websocket
+# Example of usage react and flask over websocket
 
 ## Prepare
 
