@@ -1,12 +1,11 @@
 {
   "name": "sockerio",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "svicer <svicervlad@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "pip": "pip install -r requirements.txt",
     "preserver": "source env/bin/activate",
+    "pip": "yarn preserver && pip install -r requirements.txt",
     "server": "python server/main.py",
     "serve-app": "webpack serve --mode development",
     "build-app": "webpack --mode production"
