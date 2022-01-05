@@ -5,6 +5,7 @@
   "author": "svicer <svicervlad@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "pip": "pip install -r requirements.txt",
     "preserver": "source env/bin/activate",
     "server": "python server/main.py",
     "serve-app": "webpack serve --mode development",

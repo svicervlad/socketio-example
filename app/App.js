@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import io from 'socket.io-client'
 
-const SERVER_URL = 'http://localhost:5000'
+const SERVER_URL = 'ws://localhost:5000'
 
 function App() {
   const [message, setMessage] = useState()
@@ -9,7 +9,7 @@ function App() {
   const socketRef = useRef(null)
 
   useEffect(() => {
-    socketRef.current = io(SERVER_URL)
+      socketRef.current = io(SERVER_URL)
   }, [])
 
   return (
