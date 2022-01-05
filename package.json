@@ -7,13 +7,14 @@
   "scripts": {
     "preserver": "source env/bin/activate",
     "server": "python server/main.py",
-    "serve": "webpack serve --mode development",
-    "build": "webpack --mode production"
+    "serve-app": "webpack serve --mode development",
+    "build-app": "webpack --mode production"
   },
   "dependencies": {
     "dotenv": "^10.0.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "socket.io-client": "^4.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",
