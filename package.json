@@ -11,6 +11,8 @@
     "build-app": "webpack --mode production"
   },
   "dependencies": {
+    "antd": "^4.18.2",
+    "css-loader": "^6.5.1",
     "dotenv": "^10.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -23,6 +25,7 @@
     "babel-loader": "^8.2.3",
     "dotenv-webpack": "^7.0.3",
     "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.7.2"
