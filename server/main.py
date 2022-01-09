@@ -1,13 +1,18 @@
-from flask import Flask, render_template
-from flask_socketio import SocketIO
+from flask import Flask
+from sockets import socketio
+from database import db
 
-app = Flask(__name__)
-app.config["SECRET_KEY"] = "secret!"
-socketio = SocketIO(app, cors_allowed_origins='*')
+DATATABASE_PATH = 'sqlite:////tmp/test.db'
 
-@socketio.on('message')
-def handle_message(data):
-    print('received message: ' + data)
+def create_app():
+    app = Flask(__name__)
+    app.config["SECRET_KEY"] = "secret!"
+    app.config['SQLALCHEMY_DATABASE_URI'] = DATATABASE_PATH
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    socketio.init_app(app)
+    db.init_app(app)
+    return app
 
 if __name__ == "__main__":
+    app = create_app()
     socketio.run(app)
