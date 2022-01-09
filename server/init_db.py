@@ -7,7 +7,5 @@ if __name__ == "__main__":
 
   db.create_all()
   admin = User(username='admin')
-  guest = User(username='guest')
   db.session.add(admin)
-  db.session.add(guest)
   db.session.commit()

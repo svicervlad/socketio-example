@@ -6,6 +6,7 @@ __NOTE__: tested only on archlinux
 
 - Install nodejs, yarn and python with venv
 - Run `yarn intall` to install dependencies
+- Run `yarn init_db` to init database
 
 ## Quickstart
 

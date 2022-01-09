@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "preinstall": "python -m venv env && source env/bin/activate && pip install -r requirements.txt",
+    "init_db": "python server/init_db.py",
     "preserver": "source env/bin/activate",
     "server": "python server/main.py",
     "serve-app": "webpack serve --mode development",
