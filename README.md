@@ -5,8 +5,7 @@
 __NOTE__: tested only on archlinux
 
 - Install nodejs, yarn and python with venv
-- Run `yarn pip` to install dependencies for backend
-- Run `yarn build` to install dependencies for react app
+- Run `yarn intall` to install dependencies
 
 ## Quickstart
 
