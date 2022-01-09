@@ -27,7 +27,6 @@ const UserList = () => {
     socket.open();
     socket.emit("get users");
     socket.on("users list", handleList)
-    console.log(users)
   }, [socket])
 
   return(

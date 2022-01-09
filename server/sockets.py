@@ -9,11 +9,9 @@ def user_create(user_name):
     user = User(username=user_name)
     db.session.add(user)
     db.session.commit()
-    print('User created: ' + user_name)
 
 @socketio.on('get users')
 def user_list():
   users = User.query.order_by(User.id).all()
-  print(users)
   users = [(dict(row.serialize)) for row in users]
   emit('users list', users, json=True, broadcast=True)
