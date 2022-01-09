@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { SocketContext } from '../../context/socket';
 import { Button, Typography, Input, Divider, Row, Col } from 'antd';
 
-const { Title, Paragraph, Text, Link } = Typography;
+const { Title } = Typography;
 
 const UserCreateForm = () => {
   const [user, setUser] = useState()
@@ -26,6 +26,7 @@ const UserCreateForm = () => {
             type="primary"
             onClick={(e) => {
               socket.emit('user create', user)
+              socket.emit("get users");
             }}
           >
             Sumbit
