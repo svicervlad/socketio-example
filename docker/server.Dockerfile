@@ -1,4 +1,4 @@
-FROM python:3-alpine as dependency
+FROM python:3-alpine
 
 RUN pip install --upgrade pip
 
