@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+
+  server:
+    build:
+      dockerfile: ./docker/server.Dockerfile
+    ports:
+      - "5000:5000"
+
+  app:
+    build:
+      dockerfile: ./docker/app.Dockerfile
+    ports:
+      - "80:80"
