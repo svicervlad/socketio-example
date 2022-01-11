@@ -1,6 +1,5 @@
 from flask_socketio import SocketIO, send, emit
 from database import db, User
-import json
 
 socketio = SocketIO(cors_allowed_origins='*',logger=True, engineio_logger=True)
 
