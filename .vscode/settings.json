@@ -1,4 +1,9 @@
 {
   "python.formatting.provider": "black",
-  "python.pythonPath": "/usr/local/bin/python"
+  "python.pythonPath": "/usr/local/bin/python",
+  "python.linting.pylintArgs": [
+    "--load-plugins",
+    "pylint_flask_sqlalchemy",
+    "pylint_flask",
+  ]
 }
