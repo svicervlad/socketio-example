@@ -2,7 +2,7 @@
 
 ## Prepare
 
-- Install nodejs, yarn and python with venv
+- Install nodejs, yarn and python with venv or use [vscode devcontainers](https://code.visualstudio.com/docs/remote/containers-tutorial)
 - Run `yarn intall` to install dependencies
 - Run `yarn init_db` to init database
 
